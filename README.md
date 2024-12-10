@@ -22,7 +22,15 @@ The tests should complete successfully after all factories are disposed of.
 The tests hang indefinitely and do not complete. 
 There are two cases when it happens:
 - SomeServicePart1IntegrationTests - factory per each test and each factory has hotcold async daemon.
+
+![image](https://github.com/user-attachments/assets/23cbe958-cd38-4abc-a6d7-b223f9fc1422)
+Stops as seen on screen shot
+
+
 - SomeServicePart2IntegrationTests - factory per each test but only base factory has async deamon.
+
+![image](https://github.com/user-attachments/assets/be3ea03b-fcb9-42dd-8034-10e3a31f5317)
+Batch excecution completed - repeats itself ad infinitum
 
 ## Environment
 
