@@ -11,7 +11,7 @@ The project is set up to create multiple factory instances and dispose of them c
 1. Clone the repository.
 2. Setup postgres container and robbitmq
 3. Build the project.
-4. Run the tests.
+4. Run the tests. `ASPNETCORE_ENVIRONMENT=Test dotnet test`
 
 ## Expected Behavior
 
